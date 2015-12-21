@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__qprc__irq__cb.html" title="Enumeration to define QPRC interrupt callback function." alt="" coords="5,5,117,32"/>
+<area shape="rect" id="node3" href="$structstc__qprc__filter.html" title="Structure to configuration QPRC filter." alt="" coords="142,5,244,32"/>
+<area shape="rect" id="node4" href="$structstc__qprc__irq__en.html" title="Enumeration to define QPRC interrupt selection." alt="" coords="269,5,381,32"/>
+</map>

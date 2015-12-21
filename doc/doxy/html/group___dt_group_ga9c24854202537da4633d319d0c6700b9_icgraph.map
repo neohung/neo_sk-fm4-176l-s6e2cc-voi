@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___dt_group.html#ga3c0d362c11249e5f58c6ba62e93e0bef" title="Clear interrupt status The Function clears the interrupt status." alt="" coords="201,5,298,32"/>
+<area shape="rect" id="node3" href="$group___dt_group.html#gaea727a38bcf58a035922172fbc8a5541" title="De&#45;Initialize DT." alt="" coords="212,56,287,83"/>
+<area shape="rect" id="node4" href="$group___dt_group.html#ga0c5a7723b1f82adfe5e59e9b455d6386" title="Disable Timer Counter." alt="" coords="192,107,307,133"/>
+<area shape="rect" id="node5" href="$group___dt_group.html#ga486653280661e59fd0975c3ba4b738c7" title="Disable Interrupt." alt="" coords="200,157,299,184"/>
+<area shape="rect" id="node6" href="$group___dt_group.html#ga310fc8602054b7e923a0a90860c13995" title="Enable Timer Counter." alt="" coords="193,208,305,235"/>
+<area shape="rect" id="node7" href="$group___dt_group.html#gaf93daacc342f9eda99f763caa77c1373" title="Enable Interrupt." alt="" coords="202,259,297,285"/>
+<area shape="rect" id="node8" href="$group___dt_group.html#ga970d75362685752758d4ef161b9a8c7a" title="Get interrupt status The Function can return the interrupt status (TimerXRIS)" alt="" coords="199,309,299,336"/>
+<area shape="rect" id="node9" href="$group___dt_group.html#ga5221b18037d2463f60fb4b49f871ac98" title="Get mask interrupt status The Function can return the mask interrupt status (TimerXMIS)" alt="" coords="185,360,314,387"/>
+<area shape="rect" id="node10" href="$group___dt_group.html#gae4d63e94207d705bccd5a260d5c09684" title="Initialize DT." alt="" coords="220,411,279,437"/>
+<area shape="rect" id="node11" href="$group___dt_group.html#gac86983caf0855980cc16e6ed4586db59" title="Read current count value The Function reads the value from value register." alt="" coords="186,461,313,488"/>
+<area shape="rect" id="node12" href="$group___dt_group.html#gae9fab639e4e0cd996758781e944ed2bb" title="Write back&#45;ground load value The Function writes the load value to back&#45;ground load register..." alt="" coords="184,512,315,539"/>
+<area shape="rect" id="node13" href="$group___dt_group.html#ga990ebfa2aaeaa23bdba5fb34ef71c60a" title="Write load value The Function writes the load value to load register." alt="" coords="191,563,308,589"/>
+</map>

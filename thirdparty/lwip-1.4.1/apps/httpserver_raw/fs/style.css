@@ -1,0 +1,55 @@
+h1
+{
+text-align: left;
+font-family:arial,helvetica;
+}
+
+h2
+{
+margin:5px;
+}
+
+body
+{
+width:900px;
+font-family:arial,helvetica;
+background-repeat: no-repeat;
+background-position: 85% 6%;
+background-image: url(spansion.png);
+}
+
+p
+{
+font-size:small;
+padding-left:20px;
+}
+
+div.container
+{
+width:80%;
+border: 1px solid #222222;
+margin-left:5%;
+padding:2%;
+overflow:auto;
+}
+
+div.label
+{
+float:left;
+border-bottom:10px;
+}
+
+div.bar
+{
+float:left;
+background-image:url(bar.png);
+background-repeat:repeat-x;
+background-color:#6D1F7E;
+}
+
+div.barbg
+{
+width:85%;
+float:left;
+background-color:#d1d4d3;
+}

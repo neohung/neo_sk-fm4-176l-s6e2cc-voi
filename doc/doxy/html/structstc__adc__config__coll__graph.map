@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__adc__comapre.html" title="Comparison configuration." alt="" coords="335,9,457,36"/>
+<area shape="rect" id="node3" href="$structstc__adc__irq__sel.html" title="ADC interrupt selection." alt="" coords="341,60,451,87"/>
+<area shape="rect" id="node4" href="$structstc__adc__range__compare.html" title="Range comparison configuration." alt="" coords="315,111,477,137"/>
+<area shape="rect" id="node5" href="$structstc__ad__channel__list.html" title="ADC Channel list with same sort order as the ER32 registers." alt="" coords="5,187,139,213"/>
+<area shape="rect" id="node7" href="$structstc__adc__scan.html" title="Scan Conversion configuration." alt="" coords="347,224,445,251"/>
+<area shape="rect" id="node6" href="$structstc__adc__prio.html" title="Priority Conversion configuration." alt="" coords="349,275,443,301"/>
+<area shape="rect" id="node8" href="$structstc__adc__irq__cb.html" title="ADC interrupt callback function &amp; internal data structure." alt="" coords="343,325,449,352"/>
+</map>

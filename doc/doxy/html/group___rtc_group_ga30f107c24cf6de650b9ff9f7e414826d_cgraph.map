@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___rtc_group.html#gae0d05257557542f2bdc1bf0a0b2dd219" title="Return the internal data for a certain RTC instance." alt="" coords="121,5,255,32"/>
+<area shape="rect" id="node3" href="$group___rtc_group.html#ga77f15e8533240700eaf0362b4120d907" title="Device dependent initialization of interrupts according CMSIS with level defined in pdl_user..." alt="" coords="147,56,229,83"/>
+</map>

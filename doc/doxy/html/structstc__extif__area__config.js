@@ -1,0 +1,26 @@
+var structstc__extif__area__config =
+[
+    [ "bNandFlash", "structstc__extif__area__config.html#a4574b1cee810d2177b411fe28beb46ac", null ],
+    [ "bPageAccess", "structstc__extif__area__config.html#a80b549ca682b3e5de2e2fdd1990d93e5", null ],
+    [ "bPrecedReadContinuousWrite", "structstc__extif__area__config.html#a266715c6f28bab33f9cc0ac9f67abf96", null ],
+    [ "bReadByteMask", "structstc__extif__area__config.html#aabb75829f48e77aba705d2939313f44c", null ],
+    [ "bSramFlashErrorInterruptEnable", "structstc__extif__area__config.html#a1aa39da381b1348f589646066def3cde", null ],
+    [ "bWriteEnableOff", "structstc__extif__area__config.html#ac04d25aab321e187be5f8a104e6751fd", null ],
+    [ "enAddressLatchCycle", "structstc__extif__area__config.html#a8ffc6700d3cf91c256e102f5024d7043", null ],
+    [ "enAddressLatchSetupCycle", "structstc__extif__area__config.html#a22712c4fb995fe6d9f7444c41599516a", null ],
+    [ "enAddressLatchWidthCycle", "structstc__extif__area__config.html#aa8ef08cfc8528d0d1a27c029aa339b31", null ],
+    [ "enAreaMask", "structstc__extif__area__config.html#ac5cc3c240b1c621337360b4a7bf5fe86", null ],
+    [ "enFirstReadAddressCycle", "structstc__extif__area__config.html#a38c84d2e5712a83c303cbd089017716e", null ],
+    [ "enReadAccessCycle", "structstc__extif__area__config.html#aef420a7e587850c57e3af558e9024ce6", null ],
+    [ "enReadAddressSetupCycle", "structstc__extif__area__config.html#a644d2d9a6099b40fbce36d4e9d966197", null ],
+    [ "enReadIdleCycle", "structstc__extif__area__config.html#ad50cde6febf4a92f705ae5e8a51f1a79", null ],
+    [ "enWidth", "structstc__extif__area__config.html#a85e8798c1a48a82c74b42b5d48718323", null ],
+    [ "enWriteAccessCycle", "structstc__extif__area__config.html#a7df11ac428dbfdd628d1ba5fa37d1104", null ],
+    [ "enWriteAddressSetupCycle", "structstc__extif__area__config.html#a287a0250447ad4a694b0db2aea450b81", null ],
+    [ "enWriteEnableCycle", "structstc__extif__area__config.html#a717880ebeaad298d8d44860a1f42a5d4", null ],
+    [ "enWriteIdleCycle", "structstc__extif__area__config.html#a44b8c28f660259fd8c0888049c0b3d1e", null ],
+    [ "pExtifSdramConfig", "structstc__extif__area__config.html#a74d9301c43037ba30e2ebcdfa1654bd2", null ],
+    [ "pfnSramFlashErrorCallback", "structstc__extif__area__config.html#a342cd8ec382d175394183126dbf9fc04", null ],
+    [ "pGdcSdramConfig", "structstc__extif__area__config.html#ac5dadb8349e5d76f5a8dadb9124a288c", null ],
+    [ "u8AreaAddress", "structstc__extif__area__config.html#ab011e7c0b22f5da245ff0bbe8d031a08", null ]
+];

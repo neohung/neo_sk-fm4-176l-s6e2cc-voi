@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__rc__rx__cec__irq__en.html" title="Remoter Control Receiver CEC mode interrupt enable structure." alt="" coords="5,5,147,32"/>
+<area shape="rect" id="node3" href="$structstc__rc__rx__cec__irq__cb.html" title="Remoter Control Receiver CEC mode interrupt callback functions." alt="" coords="171,5,313,32"/>
+<area shape="rect" id="node4" href="$structstc__rc__rx__addr.html" title="Remoter Control Receiver address structure." alt="" coords="339,5,445,32"/>
+</map>

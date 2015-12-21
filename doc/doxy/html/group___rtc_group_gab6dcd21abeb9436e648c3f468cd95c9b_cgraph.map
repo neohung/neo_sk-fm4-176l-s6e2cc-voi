@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___rtc_group.html#ga4db1c1f80a0fbb3742fb6c2d97c2394a" title="Disable RTC NVIC and save original value." alt="" coords="177,5,281,32"/>
+<area shape="rect" id="node3" href="$group___rtc_group.html#ga8d7b7cd1bf24da807da92e4fd395e57b" title="Restore RTC NVIC." alt="" coords="176,56,283,83"/>
+</map>

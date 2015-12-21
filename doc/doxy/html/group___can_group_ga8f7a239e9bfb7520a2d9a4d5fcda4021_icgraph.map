@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___can_group.html#ga457758addbdb8281b0bb9af306fa6815" title="Deinitializes the CAN module. Any pending transmission or receiption will be aborted and all CAN rela..." alt="" coords="261,5,345,32"/>
+<area shape="rect" id="node3" href="$group___can_group.html#ga72dc16106dd10c7ce0863996053b01f0" title="Initializes the CAN module." alt="" coords="268,56,337,83"/>
+<area shape="rect" id="node4" href="$group___can_group.html#ga323d4f4f4b68a2eb1fa7adc0c49ae5ff" title="Stop any message buffer operation i.e. disable it." alt="" coords="233,107,373,133"/>
+<area shape="rect" id="node5" href="$group___can_group.html#ga48c8e747902799e410377d4b39915d3e" title="Configure a message buffer for reception with EOB = 0 (FIFO mode). This function calls Can_SetReceive..." alt="" coords="487,183,679,209"/>
+<area shape="rect" id="node6" href="$group___can_group.html#ga0f98da3c105c7eaa3cf9c604850ff36c" title="Configure a message buffer for reception. Configure and enable a message buffer for reception..." alt="" coords="217,208,388,235"/>
+<area shape="rect" id="node7" href="$group___can_group.html#gadd7db261d564541d858756c169f5bd71" title="Configures a message buffer for transmission. Setting of new values is not possible if a transmission..." alt="" coords="213,259,392,285"/>
+<area shape="rect" id="node8" href="$group___can_group.html#ga7398532897b21d25c53be9f8e4d820f4" title="Updates the message data of a message buffer and/or start with EOB = 0 (Msg Buffer as FIFO) transmiss..." alt="" coords="461,335,704,361"/>
+<area shape="rect" id="node9" href="$group___can_group.html#gac2dfa65e0a9a2137f75d3ebbf257789b" title="Updates the message data of a message buffer and/or start transmission. Transmits the message immedia..." alt="" coords="192,360,413,387"/>
+</map>

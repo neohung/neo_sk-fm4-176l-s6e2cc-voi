@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___wfg_group.html#gaca9f029cd7aa423adbe90f792548fe41" title="clear WFG timer interrupt flag" alt="" coords="226,5,393,32"/>
+<area shape="rect" id="node3" href="$group___wfg_group.html#ga0b098ce8fa009d0fe7f4b7b69fabc65a" title="get WFG timer interrupt flag" alt="" coords="224,56,395,83"/>
+<area shape="rect" id="node4" href="$group___wfg_group.html#ga53e674fd581745d83a219ef185fc6b99" title="get Analog Filter interrupt flag" alt="" coords="192,107,427,133"/>
+<area shape="rect" id="node5" href="$group___wfg_group.html#gaba61afd342bdb8ec77bc1a8d8872aa4b" title="get Digital filter interrupt flag" alt="" coords="194,157,425,184"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___adc_group.html#ga5e69793f9ab55b23ebdda5244a2573a2" title="Clear NVIC Interrupt depending on ADC instance." alt="" coords="152,5,259,32"/>
+<area shape="rect" id="node3" href="$group___adc_group.html#ga30a0f10979a5bc2013748fc40f5175fa" title="Return the internal data for a certain ADC instance." alt="" coords="136,56,275,83"/>
+</map>

@@ -1,0 +1,28 @@
+var dma_8c =
+[
+    [ "GET_DMA_ADDRESS", "group___dma_group.html#gabdeade7db6f603158d39ab9c6b9f56d9", null ],
+    [ "Dma_DeInitChannel", "group___dma_group.html#ga8e52d75c046fc3abd2fc6d3bd2188c36", null ],
+    [ "Dma_Disable", "group___dma_group.html#gadea850c78c03bd4ab9c3d9532e52275b", null ],
+    [ "Dma_DisableIrq", "group___dma_group.html#gac11b85f0359d80f1e3c97c907f15572b", null ],
+    [ "Dma_Enable", "group___dma_group.html#gac6a148370109de9b63863710cb822386", null ],
+    [ "Dma_EnableIrq", "group___dma_group.html#ga53036b1ed0da35fa622ef04c557191a2", null ],
+    [ "Dma_GetStopCause", "group___dma_group.html#ga26ee3326421bbc823c1560ebefa05499", null ],
+    [ "Dma_InitChannel", "group___dma_group.html#gac91556b805da910eba5d83c07302b0f8", null ],
+    [ "Dma_Pause", "group___dma_group.html#gae0b667d643170abcf26f0b8ffbe3387e", null ],
+    [ "Dma_Resume", "group___dma_group.html#ga8bfab7391634c0cb292aeacf49fc4f1c", null ],
+    [ "Dma_SetChannel", "group___dma_group.html#ga5eea05fdb66ef31f55eb6affca954af2", null ],
+    [ "Dma_SetIrq10Selector", "group___dma_group.html#ga68b8992d9faed9376086674ed3998b48", null ],
+    [ "Dma_SetIrq11Selector", "group___dma_group.html#ga1153b22903dfce5bae3743be18b048a5", null ],
+    [ "Dma_SetIrq24Selector", "group___dma_group.html#ga09f043a79e5eea6813b3af46a55c5f49", null ],
+    [ "Dma_SetIrq25Selector", "group___dma_group.html#ga7b38c3fa6f2c75f4438324e643c92894", null ],
+    [ "Dma_SetIrq26Selector", "group___dma_group.html#ga68c456043d91ce1093d305eb77336362", null ],
+    [ "Dma_SetIrq27Selector", "group___dma_group.html#gadd35b69e14c5ae8f3d8cb25adc832884", null ],
+    [ "Dma_SetIrq30Selector", "group___dma_group.html#ga47ce49be54b8ac6900586355fdda3f6b", null ],
+    [ "Dma_SetIrq31Selector", "group___dma_group.html#ga57e4c5bbd618dcac2c73560b8760c00f", null ],
+    [ "DmaDeInitNvic", "group___dma_group.html#gad5b55a540536cca6317c92fac17feb56", null ],
+    [ "DmaGetInternDataIdx", "group___dma_group.html#ga280a482016ea6f6187c5bc682be9c2aa", null ],
+    [ "DmaInitNvic", "group___dma_group.html#ga0dae0d305668c909c71e7b220fe9c692", null ],
+    [ "DmaIrqHandler", "group___dma_group.html#gae263c0c75b155096a58f290596b87f63", null ],
+    [ "cau8DmaReferenceLut", "dma_8c.html#a59da083f1eb83350efb75a0ff04d65c4", null ],
+    [ "stcDmaInternData", "group___dma_group.html#ga7e84e45a8d5ebc4551bd8ed37daa8464", null ]
+];

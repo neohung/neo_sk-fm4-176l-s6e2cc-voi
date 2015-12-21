@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___qprc_group.html#gad75a1ef302c78123302d632e6feaf693" title="Get the internal data for a certain QPRC instance." alt="" coords="128,5,272,32"/>
+<area shape="rect" id="node3" href="$group___qprc_group.html#gada63f8a31b871fc8b72771eb844f72f0" title="Get the noise filter for a certain QPRC instance." alt="" coords="131,56,269,83"/>
+<area shape="rect" id="node4" href="$group___qprc_group.html#gadad6d56f15ac6cea77e2d6af4d961d20" title="Set NVIC Interrupt depending on QPRC instance." alt="" coords="155,107,245,133"/>
+</map>

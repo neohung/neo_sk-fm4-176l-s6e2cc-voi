@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__lcd__seg__sel1.html" title="These bits control I/O port status and analog switches for SEG outputs." alt="" coords="9,5,127,32"/>
+<area shape="rect" id="node3" href="$structstc__lcd__seg__sel2.html" title="These bits control I/O port status and analog switches for SEG outputs." alt="" coords="9,56,127,83"/>
+<area shape="rect" id="node4" href="$structstc__lcd__vv__sel.html" title="VVx selection bit." alt="" coords="17,107,119,133"/>
+<area shape="rect" id="node5" href="$structstc__lcd__clk__config.html" title="Select lcd source clock and configure clock division ratio." alt="" coords="6,157,130,184"/>
+<area shape="rect" id="node6" href="$structstc__lcd__booster.html" title="LCD booster function." alt="" coords="13,208,123,235"/>
+<area shape="rect" id="node7" href="$structstc__lcd__com__sel.html" title="These bits control I/O port status and analog switches for COM outputs." alt="" coords="11,259,125,285"/>
+</map>

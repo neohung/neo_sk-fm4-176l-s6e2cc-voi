@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___canfd_group.html#gab5341f65d87cdd5466c5266ce8e184ba" title="Check and notify received messages." alt="" coords="185,81,365,108"/>
+<area shape="rect" id="node3" href="$group___canfd_group.html#ga22c6b240465e255cce535a2b99b4f98f" title="Return the internal data for a certain CAN FD instance." alt="" coords="425,5,575,32"/>
+<area shape="rect" id="node4" href="$group___canfd_group.html#gafea9b5096bb579f5b32fd809a8e671a8" title="Calculate address of the element of specified dedicated Rx Buffer." alt="" coords="413,56,587,83"/>
+<area shape="rect" id="node5" href="$group___canfd_group.html#ga863e6789ba97f5a416196c0e802f4741" title="Convert MCAN Rx buffer to driver message." alt="" coords="435,107,565,133"/>
+<area shape="rect" id="node6" href="$group___canfd_group.html#gaf1e273038bfba7d28f75b0a1aa7075c2" title="Get one received message from specified Rx FIFO." alt="" coords="443,157,557,184"/>
+</map>

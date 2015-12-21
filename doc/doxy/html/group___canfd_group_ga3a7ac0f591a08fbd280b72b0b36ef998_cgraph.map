@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___canfd_group.html#gada1da063e9378cb074ef006f940ff40c" title="Clear transmission request marker." alt="" coords="150,5,335,32"/>
+<area shape="rect" id="node3" href="$group___canfd_group.html#ga22c6b240465e255cce535a2b99b4f98f" title="Return the internal data for a certain CAN FD instance." alt="" coords="385,31,535,57"/>
+<area shape="rect" id="node4" href="$group___canfd_group.html#ga100479bb869a6016e641302c462bade3" title="Clear NVIC Interrupt depending on CAN FD instance." alt="" coords="173,107,312,133"/>
+</map>

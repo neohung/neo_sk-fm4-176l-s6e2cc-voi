@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___dstc_group.html#gab0b87d2b4d0861c56bc34988f7987950" title="DSTC Peripheral Interrupt Service Routines." alt="" coords="207,5,342,32"/>
+<area shape="rect" id="node3" href="$group___dstc_group.html#gaf071689ef1521ebcca4b993553bdb0b5" title="BT." alt="" coords="213,56,337,83"/>
+<area shape="rect" id="node4" href="$group___dstc_group.html#ga79c2db25351e147feafa973de49000d3" title="CAN&#45;FD." alt="" coords="201,107,348,133"/>
+<area shape="rect" id="node5" href="$group___dstc_group.html#ga7b016f5abaca968cc787172b4cca043b" title="EXT INT." alt="" coords="205,157,345,184"/>
+<area shape="rect" id="node6" href="$group___dstc_group.html#ga919d8e4957c8593f57ed1a4b222eb888" title="Dstc_HsspiIrqHandler" alt="" coords="203,208,346,235"/>
+<area shape="rect" id="node7" href="$group___dstc_group.html#gab0c87912f501a44a8d59d1d0e8e4af80" title="I2C SLAVE." alt="" coords="207,259,343,285"/>
+<area shape="rect" id="node8" href="$group___dstc_group.html#ga36950bf4f114467ce3a1a05a1762dad6" title="Dstc_I2sIrqHandler" alt="" coords="209,309,340,336"/>
+<area shape="rect" id="node9" href="$group___dstc_group.html#ga9bd5a8e01e497661ac86a9f34a772e6f" title="MFS." alt="" coords="201,360,348,387"/>
+<area shape="rect" id="node10" href="$group___dstc_group.html#ga2d234dfcb353cccdcbf5d4849f3f04c7" title="Dstc_MfsTxIrqHandler" alt="" coords="201,411,348,437"/>
+<area shape="rect" id="node11" href="$group___dstc_group.html#ga3fed838da78815c15ce7fa85d8560a9d" title="MFT FRT." alt="" coords="187,461,362,488"/>
+<area shape="rect" id="node12" href="$group___dstc_group.html#gac77233a31d82bb230bcb849e0fe45a5a" title="Dstc_MftFrtZeroIrqHandler" alt="" coords="188,512,361,539"/>
+<area shape="rect" id="node13" href="$group___dstc_group.html#ga8af62d6f160b115e0cff2baff4b93ccc" title="Dstc_MftIcuIrqHandler" alt="" coords="201,563,349,589"/>
+<area shape="rect" id="node14" href="$group___dstc_group.html#ga980133c6f749a77478ce999115ad71c5" title="Dstc_MftOcuIrqHandler" alt="" coords="198,613,351,640"/>
+<area shape="rect" id="node15" href="$group___dstc_group.html#ga4ca70b80b0aaa5ad0142a533cf18ff6b" title="Dstc_MftWfgIrqHandler" alt="" coords="197,664,352,691"/>
+<area shape="rect" id="node16" href="$group___dstc_group.html#ga0c4c42fde240901455f35380afc648e5" title="PCRC." alt="" coords="206,715,343,741"/>
+<area shape="rect" id="node17" href="$group___dstc_group.html#ga872a8c620ea1ebfaea77f80761913e0b" title="PPG." alt="" coords="207,765,342,792"/>
+<area shape="rect" id="node18" href="$group___dstc_group.html#ga68e2abad7f97fdd67f24fa2c9a9fb6e8" title="QPRC." alt="" coords="205,816,345,843"/>
+<area shape="rect" id="node19" href="$group___dstc_group.html#gabc40d7fb9ddf8e4a03257f112677b883" title="Dstc_WcIrqHandler" alt="" coords="209,867,340,893"/>
+</map>

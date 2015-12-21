@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__mfsn.html" title="MFS common instance structure." alt="" coords="99,96,172,123"/>
+<area shape="rect" id="node3" href="$structstc__mfs__intern__data.html" title="MFS module internal data, storing internal information for each enabled MFS instance." alt="" coords="197,96,336,123"/>
+<area shape="rect" id="node4" href="$structstc__csio__irq__cb.html" title="CSIO interrupt callback function." alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node5" href="$structstc__i2c__irq__cb.html" title="I2C interrupt callback function." alt="" coords="149,5,251,32"/>
+<area shape="rect" id="node6" href="$structstc__uart__irq__cb.html" title="UART interrupt callback function." alt="" coords="278,5,388,32"/>
+<area shape="rect" id="node7" href="$structstc__lin__irq__cb.html" title="LIN interrupt callback function." alt="" coords="423,5,523,32"/>
+</map>

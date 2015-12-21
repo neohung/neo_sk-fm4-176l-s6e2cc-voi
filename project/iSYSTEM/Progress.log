@@ -1,0 +1,8 @@
+CONVERTING	F:\TOOLS\Cypress\sk-fm4-176l-s6e2cc-voi\neo_sk-fm4-176l-s6e2cc-voi\project\iSYSTEM\release\neo.elf
+LOADING	F:\TOOLS\Cypress\sk-fm4-176l-s6e2cc-voi\neo_sk-fm4-176l-s6e2cc-voi\project\iSYSTEM\release\neo.elf
+ANALYZING
+ANALYZING
+EMULATION	POD: Cortex (JTAG,SWD)   CPU: FM3/FM4
+DEBUG	PROTOCOL: SWD; RESET: SoC
+LOADING 	34972 bytes
+PROGRAMMING	Spansion FM4_2048KB_40KB (5 sectors)

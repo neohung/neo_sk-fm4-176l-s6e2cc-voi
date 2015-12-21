@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___main_flash_group.html#ga7daa977a620e7ef601b8fd8ae921de3a" title="Dual Flash sector erase." alt="" coords="243,5,405,32"/>
+<area shape="rect" id="node3" href="$group___main_flash_group.html#ga7ccf7406cdfc105be384edfd3e22cc1d" title="Dual Flash half&#45;word write." alt="" coords="235,56,413,83"/>
+<area shape="rect" id="node4" href="$group___main_flash_group.html#ga4571c35173f70bbd7fe1cb90a28703e7" title="Dual Flash word write with ECC." alt="" coords="235,107,413,133"/>
+</map>

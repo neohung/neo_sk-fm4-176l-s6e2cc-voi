@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__canfd__notification.html" title="CAN FD notification pointer structure." alt="" coords="5,187,149,213"/>
+<area shape="rect" id="node3" href="$structstc__canfd__interrupt__handling.html" title="CAN FD interrupt pointer structure." alt="" coords="175,187,361,213"/>
+<area shape="rect" id="node4" href="$structstc__canfd__msg.html" title="CAN message." alt="" coords="215,96,321,123"/>
+<area shape="rect" id="node5" href="$structstc__canfd__msg__data.html" title="CAN message data." alt="" coords="121,5,260,32"/>
+<area shape="rect" id="node6" href="$structstc__canfd__msg__id.html" title="CAN message identifier." alt="" coords="285,5,408,32"/>
+<area shape="rect" id="node7" href="$structstc__canfd__rx__confirmation.html" title="stc_canfd_rx_confirmation" alt="" coords="386,187,557,213"/>
+</map>

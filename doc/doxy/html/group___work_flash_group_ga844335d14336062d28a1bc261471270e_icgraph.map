@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___work_flash_group.html#ga29f04a445263c151c76cc22101a3a58a" title="Flash chip erase." alt="" coords="212,5,340,32"/>
+<area shape="rect" id="node3" href="$group___work_flash_group.html#gad85869c6dcc73cf1a0a363d8bc66fd36" title="Flash sector erase." alt="" coords="206,56,346,83"/>
+<area shape="rect" id="node4" href="$group___work_flash_group.html#ga8ee34360863dd9bb497cf6ae7a830acb" title="Flash half&#45;word write with ECC." alt="" coords="198,107,354,133"/>
+<area shape="rect" id="node5" href="$group___work_flash_group.html#ga1d639a802854c38e71b1d8bf1d099e61" title="Flash word write with ECC." alt="" coords="198,157,354,184"/>
+</map>

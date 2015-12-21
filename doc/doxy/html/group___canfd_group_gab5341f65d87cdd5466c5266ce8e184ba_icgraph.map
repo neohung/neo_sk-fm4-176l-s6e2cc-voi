@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___canfd_group.html#ga5c07091716e4644f0a81c8a912aa70b4" title="Get all received messages by polling. Check and notify all received messages by polling." alt="" coords="235,5,365,32"/>
+<area shape="rect" id="node3" href="$group___canfd_group.html#gad7c22e5694188d4711a5bac784b55dd7" title="CAN FD (Status/Error/Rx/Tx) interrupt ISR." alt="" coords="243,56,357,83"/>
+</map>

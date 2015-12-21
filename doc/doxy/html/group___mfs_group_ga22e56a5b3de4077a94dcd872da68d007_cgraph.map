@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___mfs_group.html#gadc15116c5d4e631b9e82896986fa4b98" title="Set the baudrate of LIN." alt="" coords="149,5,294,32"/>
+<area shape="rect" id="node3" href="$group___mfs_group.html#ga8cf89127037324ffc519f97b5312be9c" title="Device dependent initialization of transmit interrupts according CMSIS with level defined in pdl..." alt="" coords="180,56,263,83"/>
+<area shape="rect" id="node4" href="$group___mfs_group.html#gafb06f7e35238637a0447924a15a25334" title="Return the internal data for a certain MFS instance." alt="" coords="145,107,298,133"/>
+</map>

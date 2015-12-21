@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___canfd_group.html#ga3a7ac0f591a08fbd280b72b0b36ef998" title="Deinitializes the CAN FD module. Any pending transmission or receiption will be aborted and all CAN F..." alt="" coords="245,5,339,32"/>
+<area shape="rect" id="node3" href="$group___canfd_group.html#ga5362c5106dfb58559cfdc4c23eda770c" title="Initializes the CAN FD module." alt="" coords="252,56,332,83"/>
+<area shape="rect" id="node4" href="$group___canfd_group.html#gad1d04a3b4fa4d48cc88a9cce2c28d655" title="Restart communication. Restart CAN communication. This funnction stops and starts communication..." alt="" coords="241,107,343,133"/>
+</map>

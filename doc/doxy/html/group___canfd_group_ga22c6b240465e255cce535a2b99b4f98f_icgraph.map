@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___canfd_group.html#ga3a7ac0f591a08fbd280b72b0b36ef998" title="Deinitializes the CAN FD module. Any pending transmission or receiption will be aborted and all CAN F..." alt="" coords="458,11,553,37"/>
+<area shape="rect" id="node3" href="$group___canfd_group.html#gac652e16946c1eb838406d03cabac1f13" title="Get current bus status." alt="" coords="230,251,367,277"/>
+<area shape="rect" id="node4" href="$group___canfd_group.html#gad7c22e5694188d4711a5bac784b55dd7" title="CAN FD (Status/Error/Rx/Tx) interrupt ISR." alt="" coords="448,251,563,277"/>
+<area shape="rect" id="node5" href="$group___canfd_group.html#ga5362c5106dfb58559cfdc4c23eda770c" title="Initializes the CAN FD module." alt="" coords="465,87,545,113"/>
+<area shape="rect" id="node6" href="$group___canfd_group.html#ga3b37e1c1b9a5a253a13775662198d233" title="Start communication. Start (enable) CAN communication." alt="" coords="253,149,344,176"/>
+<area shape="rect" id="node8" href="$group___canfd_group.html#ga24c563327f19f4d383273c044f1743c6" title="Configures a message buffer for transmission. Setting of new values is not possible if a transmission..." alt="" coords="231,352,367,379"/>
+<area shape="rect" id="node9" href="$group___canfd_group.html#gab5341f65d87cdd5466c5266ce8e184ba" title="Check and notify received messages." alt="" coords="209,301,389,328"/>
+<area shape="rect" id="node11" href="$group___canfd_group.html#gada1da063e9378cb074ef006f940ff40c" title="Clear transmission request marker." alt="" coords="206,48,391,75"/>
+<area shape="rect" id="node7" href="$group___canfd_group.html#gad1d04a3b4fa4d48cc88a9cce2c28d655" title="Restart communication. Restart CAN communication. This funnction stops and starts communication..." alt="" coords="454,144,557,171"/>
+<area shape="rect" id="node10" href="$group___canfd_group.html#ga5c07091716e4644f0a81c8a912aa70b4" title="Get all received messages by polling. Check and notify all received messages by polling." alt="" coords="441,301,570,328"/>
+</map>

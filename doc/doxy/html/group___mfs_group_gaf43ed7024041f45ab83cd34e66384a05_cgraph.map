@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___mfs_group.html#gace28fbf6b0f58cd15acb06ab1f7d3181" title="Set the baudrate of I2C." alt="" coords="148,5,295,32"/>
+<area shape="rect" id="node3" href="$group___mfs_group.html#gabe41825cea71550bd7b2f36b812cc681" title="Return the internal data for a certain I2C instance." alt="" coords="144,56,299,83"/>
+<area shape="rect" id="node4" href="$group___mfs_group.html#ga8cf89127037324ffc519f97b5312be9c" title="Device dependent initialization of transmit interrupts according CMSIS with level defined in pdl..." alt="" coords="180,107,263,133"/>
+</map>

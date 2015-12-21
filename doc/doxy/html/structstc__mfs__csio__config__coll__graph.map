@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__csio__irq__cb.html" title="CSIO interrupt callback function." alt="" coords="23,5,132,32"/>
+<area shape="rect" id="node3" href="$structstc__csio__cs.html" title="CSIO chip selection configuration." alt="" coords="34,56,121,83"/>
+<area shape="rect" id="node4" href="$structstc__mfs__fifo__config.html" title="Mfs FIFO configuration." alt="" coords="11,107,143,133"/>
+<area shape="rect" id="node5" href="$structstc__csio__serial__timer.html" title="CSIO serial timer configuration." alt="" coords="6,157,149,184"/>
+<area shape="rect" id="node6" href="$structstc__csio__irq__en.html" title="CSIO interrupt enable structure." alt="" coords="22,208,133,235"/>
+</map>

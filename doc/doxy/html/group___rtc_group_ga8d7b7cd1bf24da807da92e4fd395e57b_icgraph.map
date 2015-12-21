@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___rtc_group.html#ga0afae76ee7f40f46b8a3bbe04ec8e74a" title="Read RTC time and date." alt="" coords="160,5,291,32"/>
+<area shape="rect" id="node4" href="$group___rtc_group.html#gab6dcd21abeb9436e648c3f468cd95c9b" title="Set time and date after RTC is running." alt="" coords="165,56,286,83"/>
+<area shape="rect" id="node3" href="$group___rtc_group.html#ga490ac18827bdc22ac2b99dfacb38c7cd" title="RTC interrupt service routine." alt="" coords="339,5,445,32"/>
+</map>

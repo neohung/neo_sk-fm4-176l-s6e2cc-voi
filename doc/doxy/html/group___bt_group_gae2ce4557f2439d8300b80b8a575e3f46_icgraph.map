@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___bt_group.html#ga4925c4677ce009e6aced48039d7d8fee" title="Initialize PPG function of BT." alt="" coords="131,5,218,32"/>
+<area shape="rect" id="node3" href="$group___bt_group.html#ga77a730eaba43b62a12132b6ae9ad6645" title="Initialize PWC function of BT." alt="" coords="131,56,219,83"/>
+<area shape="rect" id="node4" href="$group___bt_group.html#ga99b5d7599e2109cc43549287c803f526" title="Initialize PWM function of BT." alt="" coords="128,107,221,133"/>
+<area shape="rect" id="node5" href="$group___bt_group.html#ga14f6708b69b0e4980a3e82900d581ba9" title="Initialize RT function of BT." alt="" coords="136,157,213,184"/>
+</map>

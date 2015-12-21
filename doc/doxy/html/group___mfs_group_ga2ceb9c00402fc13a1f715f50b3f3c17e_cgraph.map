@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___mfs_group.html#gaf501bdcbb009eca7125601c47b4eb8a5" title="Set the baudrate of UART." alt="" coords="157,5,310,32"/>
+<area shape="rect" id="node3" href="$group___mfs_group.html#ga8cf89127037324ffc519f97b5312be9c" title="Device dependent initialization of transmit interrupts according CMSIS with level defined in pdl..." alt="" coords="192,56,275,83"/>
+<area shape="rect" id="node4" href="$group___mfs_group.html#ga40fb7c5c444cd035117696953cb49b33" title="Return the internal data for a certain UART instance." alt="" coords="153,107,314,133"/>
+</map>

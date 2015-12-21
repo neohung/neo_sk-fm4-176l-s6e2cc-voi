@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__i2sl__irq__cb.html" title="I2S&#45;Lite interrupt callback function." alt="" coords="33,5,140,32"/>
+<area shape="rect" id="node3" href="$structstc__i2s__irq__en.html" title="I2S interrupt enable structure." alt="" coords="35,56,139,83"/>
+<area shape="rect" id="node4" href="$structstc__i2s__subframe__config.html" title="I2S sub frame configuration." alt="" coords="5,113,168,140"/>
+<area shape="rect" id="node5" href="$structstc__i2s__irq__cb.html" title="I2S interrupt callback function structure." alt="" coords="35,164,138,191"/>
+<area shape="rect" id="node6" href="$structstc__i2sl__irq__en.html" title="I2S interrupt enable structure." alt="" coords="33,215,140,241"/>
+</map>

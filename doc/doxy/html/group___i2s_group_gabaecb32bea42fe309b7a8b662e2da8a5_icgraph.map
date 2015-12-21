@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___i2s_group.html#gafbb05b03946b24c841bcc5438d157de2" title="Deinitializes the I2S module." alt="" coords="202,5,281,32"/>
+<area shape="rect" id="node3" href="$group___i2s_group.html#gad8fedfac77fe8d10eea523932d9974ba" title="Disable I2S interrupts." alt="" coords="190,56,293,83"/>
+<area shape="rect" id="node4" href="$group___i2s_group.html#gaa6aec46e2cc3bb00a77ace627c2ca5d4" title="Enable I2S interrupts." alt="" coords="191,107,291,133"/>
+<area shape="rect" id="node5" href="$group___i2s_group.html#gac2610a437cb5df2f7afd42fb07b60d44" title="I2s_Init" alt="" coords="209,157,273,184"/>
+</map>

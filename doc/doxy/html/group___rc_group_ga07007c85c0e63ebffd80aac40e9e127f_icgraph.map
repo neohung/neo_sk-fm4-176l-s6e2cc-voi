@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___rc_group.html#ga3a82a26e87fc248e9e3d9429286b6df2" title="Initialize CEC mode of Remote Control Reception." alt="" coords="134,5,245,32"/>
+<area shape="rect" id="node3" href="$group___rc_group.html#ga23a8d4d4439f7551219a8246acbbf8d1" title="Initialize NEC mode of Remote Control Reception." alt="" coords="134,56,245,83"/>
+<area shape="rect" id="node4" href="$group___rc_group.html#gadada9d2a8baf6631dabc59d50e7956d4" title="Initialize SIRCS mode of Remote Control Reception." alt="" coords="131,107,248,133"/>
+<area shape="rect" id="node5" href="$group___rc_group.html#gaedc41ced3ac43c6347a76be0247ebb45" title="Initialize CEC mode of Remote Control transmission." alt="" coords="134,157,245,184"/>
+</map>

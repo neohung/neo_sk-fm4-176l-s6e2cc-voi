@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__sdif__err__irq.html" title="SDIF error status types." alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node3" href="$structstc__sdif__normal__irq__cb.html" title="SDIF error status callback functions." alt="" coords="140,5,295,32"/>
+<area shape="rect" id="node4" href="$structstc__sdif__normal__irq.html" title="SDIF normal status types." alt="" coords="319,5,453,32"/>
+<area shape="rect" id="node5" href="$structstc__sdif__err__irq__cb.html" title="SDIF error status callback functions." alt="" coords="479,5,609,32"/>
+</map>

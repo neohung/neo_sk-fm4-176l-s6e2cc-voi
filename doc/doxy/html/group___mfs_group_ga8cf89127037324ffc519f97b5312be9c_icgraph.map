@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___mfs_group.html#ga3f39acddef04f14896a6b5dd5accf4d8" title="Initialization of a MFS module to activate as CSIO." alt="" coords="136,5,235,32"/>
+<area shape="rect" id="node3" href="$group___mfs_group.html#gaf43ed7024041f45ab83cd34e66384a05" title="Initialization of a MFS module to activate as I2C." alt="" coords="140,56,231,83"/>
+<area shape="rect" id="node4" href="$group___mfs_group.html#ga22e56a5b3de4077a94dcd872da68d007" title="Initialization of a MFS module to activate as LIN." alt="" coords="140,107,231,133"/>
+<area shape="rect" id="node5" href="$group___mfs_group.html#ga2ceb9c00402fc13a1f715f50b3f3c17e" title="Initialization of a MFS module to activate as UART." alt="" coords="136,157,235,184"/>
+</map>

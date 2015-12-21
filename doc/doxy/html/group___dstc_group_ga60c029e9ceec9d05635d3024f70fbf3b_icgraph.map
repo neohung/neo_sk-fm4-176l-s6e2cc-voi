@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___dstc_group.html#gaaba7cea7691f9e85d26bd49a7f521ba7" title="De&#45;Initializes the the DSTC." alt="" coords="213,5,299,32"/>
+<area shape="rect" id="node3" href="$group___dstc_group.html#ga0d66d0cb7cb0f88426802b5834a6543b" title="Interrupt Service Routine of DSTC." alt="" coords="199,56,313,83"/>
+<area shape="rect" id="node4" href="$group___dstc_group.html#gae5037035561054dfdbf2ec3c254b36cf" title="Release DSTC from Standby State." alt="" coords="184,107,328,133"/>
+<area shape="rect" id="node5" href="$group___dstc_group.html#gabf4fbd69c054694fe2d5d4abc91101ef" title="Initializes the DSTC according the Configuration." alt="" coords="377,107,447,133"/>
+</map>

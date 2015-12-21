@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___hs_spi_group.html#ga14b83b69bca9c376d382ea131ccbc98b" title="Globally disable HS&#45;SPI module by clearing bit MEN." alt="" coords="310,5,453,32"/>
+<area shape="rect" id="node3" href="$group___p_d_l.html#ga76336ac37d977e02bf0fdbf84b1e3fd1" title="Hook function, which is called in polling loops." alt="" coords="504,56,664,83"/>
+<area shape="rect" id="node4" href="$group___hs_spi_group.html#gacffe258666aff8b6d4d2d29ddab17253" title="Globally enable SPI module by setting bit MEN." alt="" coords="311,107,451,133"/>
+<area shape="rect" id="node5" href="$group___hs_spi_group.html#ga075c13e0ec20570f5dce624c7daac457" title="Return the internal data for a certain HS&#45;SPI instance." alt="" coords="307,157,456,184"/>
+</map>

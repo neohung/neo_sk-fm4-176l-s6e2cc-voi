@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__rt__irq__en.html" title="structure to enable the Reload timer interrupts" alt="" coords="5,5,101,32"/>
+<area shape="rect" id="node3" href="$structstc__rt__irq__cb.html" title="structure to set the Reload timer interrupt callback function" alt="" coords="127,5,223,32"/>
+</map>

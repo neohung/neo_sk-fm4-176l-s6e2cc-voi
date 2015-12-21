@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___canfd_group.html#ga3b37e1c1b9a5a253a13775662198d233" title="Start communication. Start (enable) CAN communication." alt="" coords="205,5,296,32"/>
+<area shape="rect" id="node4" href="$group___canfd_group.html#ga550cd0141aa72ab5759d3f240e254008" title="Stop communication. Stop (disable) CAN communication. Any pending transmission or receiption will be ..." alt="" coords="207,56,295,83"/>
+<area shape="rect" id="node5" href="$group___canfd_group.html#gada1da063e9378cb074ef006f940ff40c" title="Clear transmission request marker." alt="" coords="158,107,343,133"/>
+<area shape="rect" id="node3" href="$group___canfd_group.html#ga22c6b240465e255cce535a2b99b4f98f" title="Return the internal data for a certain CAN FD instance." alt="" coords="393,56,543,83"/>
+</map>

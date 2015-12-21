@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___i2sl_group.html#ga73ccbeeeb72aa5bbe3e78c6f7f4b7485" title="Clear NVIC Interrupt depending on I2S instance." alt="" coords="136,5,235,32"/>
+<area shape="rect" id="node3" href="$group___i2sl_group.html#gabf7fcdc65253cdaf73a34db8aae52de7" title="Return the internal data for a certain i2s register instance." alt="" coords="136,56,235,83"/>
+</map>

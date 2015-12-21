@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__mfs__fifo__config.html" title="Mfs FIFO configuration." alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node3" href="$structstc__lin__irq__en.html" title="LIN interrupt selection." alt="" coords="161,5,263,32"/>
+<area shape="rect" id="node4" href="$structstc__lin__irq__cb.html" title="LIN interrupt callback function." alt="" coords="287,5,387,32"/>
+</map>

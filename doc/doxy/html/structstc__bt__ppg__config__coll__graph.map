@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__ppg__irq__en.html" title="structure to enable the PPG interrupts" alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node3" href="$structstc__ppg__int__cb.html" title="structure to set the PPG interrupt callback function" alt="" coords="139,5,245,32"/>
+</map>

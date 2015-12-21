@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__canfd__msg.html" title="CAN message." alt="" coords="99,96,205,123"/>
+<area shape="rect" id="node3" href="$structstc__canfd__msg__data.html" title="CAN message data." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node4" href="$structstc__canfd__msg__id.html" title="CAN message identifier." alt="" coords="169,5,292,32"/>
+</map>

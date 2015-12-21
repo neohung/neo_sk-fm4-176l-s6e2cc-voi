@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__icc__irq__en.html" title="ICC interrupt enable structure." alt="" coords="5,5,107,32"/>
+<area shape="rect" id="node3" href="$structstc__icc__irq__cb.html" title="ICC interrupt callback function." alt="" coords="131,5,233,32"/>
+<area shape="rect" id="node4" href="$structstc__icc__fifo__config.html" title="ICC FIFO configuration." alt="" coords="258,5,384,32"/>
+</map>

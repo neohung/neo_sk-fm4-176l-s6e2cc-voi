@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___hs_spi_group.html#gaabd3e2de597791f8a5ae640088da7df6" title="Transfers linked data in direct half&#45;duplex mode." alt="" coords="195,5,448,32"/>
+<area shape="rect" id="node4" href="$group___hs_spi_group.html#ga7581afad372733fb4b809bf82cad43b7" title="Initialisation of the HS&#45;SPI module. FIFO width is limited to 8 bit and DMA is not supported in direc..." alt="" coords="282,56,361,83"/>
+<area shape="rect" id="node5" href="$group___hs_spi_group.html#ga80db62528e962c0444c98a962aad556a" title="Configures the communication parameters of an external device." alt="" coords="222,107,421,133"/>
+<area shape="rect" id="node6" href="$group___hs_spi_group.html#gaba1e150431d43f0f7dc27519c0153f1e" title="Set mode of the HS&#45;SPI unit." alt="" coords="266,157,377,184"/>
+<area shape="rect" id="node7" href="$group___hs_spi_group.html#gab712aeb658f9f6917d13dd91049f4510" title="Set read command sequence for command sequencer mode." alt="" coords="210,208,433,235"/>
+<area shape="rect" id="node8" href="$group___hs_spi_group.html#ga9a629dae254e331170b5605a2992a186" title="Set write command sequence for command sequencer mode." alt="" coords="209,259,434,285"/>
+<area shape="rect" id="node3" href="$group___hs_spi_group.html#ga3c4d4f5d720b75472f88ddf2defe996b" title="Transfers data in direct half&#45;duplex mode." alt="" coords="496,5,731,32"/>
+</map>

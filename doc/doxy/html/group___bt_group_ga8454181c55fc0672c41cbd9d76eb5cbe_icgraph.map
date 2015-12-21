@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___bt_group.html#ga583a7b40cd194032aa10592b816d531b" title="Configure BT IO mode." alt="" coords="183,5,303,32"/>
+<area shape="rect" id="node3" href="$group___bt_group.html#gac133ce57d4b664e2c05d16adbc95e777" title="De&#45;Initialize PPG function of BT." alt="" coords="192,56,293,83"/>
+<area shape="rect" id="node4" href="$group___bt_group.html#ga00765c7d5219ec8254bff14f6b958caf" title="Enable PPG timer interrupt." alt="" coords="181,107,304,133"/>
+<area shape="rect" id="node5" href="$group___bt_group.html#ga4925c4677ce009e6aced48039d7d8fee" title="Initialize PPG function of BT." alt="" coords="199,157,286,184"/>
+<area shape="rect" id="node6" href="$group___bt_group.html#ga4a1065d36503f333e07c0681fa5e6ed3" title="De&#45;Initialize PWC function of BT." alt="" coords="191,208,294,235"/>
+<area shape="rect" id="node7" href="$group___bt_group.html#ga77a730eaba43b62a12132b6ae9ad6645" title="Initialize PWC function of BT." alt="" coords="199,259,287,285"/>
+<area shape="rect" id="node8" href="$group___bt_group.html#ga7de1c0d7d05f0c479cece39272534baa" title="De&#45;Initialize PWM function of BT." alt="" coords="189,309,297,336"/>
+<area shape="rect" id="node9" href="$group___bt_group.html#ga99b5d7599e2109cc43549287c803f526" title="Initialize PWM function of BT." alt="" coords="196,360,289,387"/>
+<area shape="rect" id="node10" href="$group___bt_group.html#ga91e987c4beb1b77a17672f9379fc2aef" title="De&#45;Initialize RT function of BT." alt="" coords="197,411,289,437"/>
+<area shape="rect" id="node11" href="$group___bt_group.html#ga14f6708b69b0e4980a3e82900d581ba9" title="Initialize RT function of BT." alt="" coords="204,461,281,488"/>
+</map>

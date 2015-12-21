@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__pwc__irq__en.html" title="structure to enable the PWC timer interrupts" alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node3" href="$structstc__pwc__int__cb.html" title="structure to set the PWC timer interrupt callback function" alt="" coords="140,5,249,32"/>
+</map>

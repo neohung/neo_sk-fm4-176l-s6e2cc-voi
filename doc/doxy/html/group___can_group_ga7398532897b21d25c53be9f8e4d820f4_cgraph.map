@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___can_group.html#gac2dfa65e0a9a2137f75d3ebbf257789b" title="Updates the message data of a message buffer and/or start transmission. Transmits the message immedia..." alt="" coords="296,56,517,83"/>
+<area shape="rect" id="node3" href="$group___can_group.html#ga8f7a239e9bfb7520a2d9a4d5fcda4021" title="Return the internal data for a certain CAN instance." alt="" coords="575,5,713,32"/>
+<area shape="rect" id="node4" href="$group___can_group.html#ga5d20f8298ba318b2bb092d7e4d48caac" title="Check if the given Message Buffer can be updated." alt="" coords="565,56,723,83"/>
+</map>

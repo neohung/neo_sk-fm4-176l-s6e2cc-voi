@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__i2c__irq__en.html" title="I2C interrupt enable structure." alt="" coords="5,5,109,32"/>
+<area shape="rect" id="node3" href="$structstc__mfs__fifo__config.html" title="Mfs FIFO configuration." alt="" coords="134,5,265,32"/>
+<area shape="rect" id="node4" href="$structstc__i2c__irq__cb.html" title="I2C interrupt callback function." alt="" coords="290,5,392,32"/>
+</map>

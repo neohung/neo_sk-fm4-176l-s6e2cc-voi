@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Spansion FM4</title>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8">
+    </head>
+<body>
+
+<script type="text/javascript" src="json2.js">
+</script>
+<script>
+<!--
+var xhr;
+var xhrs;
+var msie;
+if (window.ActiveXObject) {
+	xhr = new ActiveXObject("Microsoft.XMLHTTP");
+	xhrs = new ActiveXObject("Microsoft.XMLHTTP");
+	msie = true;
+    }
+	else {
+	xhr = new XMLHttpRequest();
+	xhrs = new XMLHttpRequest();
+	msie = false;
+	}
+
+function requestData() {
+	xhr.open('get', 'ajax_data.json');
+	if (msie == true) {
+        xhr.setRequestHeader("If-Modified-Since", "Sat, 1 Jan 2000 00:00:00 GMT"); 
+    }
+    xhr.onreadystatechange = processResponse;
+    xhr.send(null);
+}
+
+function processResponse() {
+    if (xhr.readyState == 4  && xhr.status == 200){
+		myJO = JSON.parse(xhr.responseText); // my JSON Object
+		var ax = myJO.a / 8192*100;
+		var lx = myJO.l / 99*100;
+        document.getElementById('av').innerHTML = myJO.a;
+		document.getElementById("adc").style.width = ax + '%';
+		document.getElementById('lcdval').value=myJO.l;
+		document.getElementById("lcd").style.width = lx + '%';
+		}
+    }
+
+var x = 100;
+function changeWidth() {
+    x += 10;
+    document.getElementById("adc").style.width = x + 'px';
+}
+
+function sendLCDData() {
+	now = new Date(); // workaround for buggy MSIE behavior
+    xhrs.open('get', 'input.cgi?lcdval='+document.getElementById('lcdval').value + '&'+now);
+    xhrs.send();  
+}
+
+function incLCD() {
+	if (document.getElementById('lcdval').value < 99)
+    document.getElementById('lcdval').value++;
+	sendLCDData();
+}
+
+function decLCD() {
+	if (document.getElementById('lcdval').value > 0)
+		document.getElementById('lcdval').value--;
+	sendLCDData();
+}   
+window.setInterval(requestData, 200);
+-->
+</script>
+<noscript>
+<h1>Please activate JavaScript for this site to work properly!</h1>
+<p>
+You will get real-time data updates and a better data presentation.
+</p>
+</noscript>
+
+<h1>Welcome to SPANSION FM4</h1>
+<p>
+
+This Webserver runs on an S6E2CCAL0A microcontroller, a member of Spansion's FM4 family,<br>powered by the <a href="http://savannah.nongnu.org/projects/lwip/">LwIP (lightweight IP)</a> TCP/IP stack.
+</p>
+<p>
+Here you see a website that refreshes its data from the microcontroller in the background without the need to reload the whole page.
+You can find a <a href="simple.shtml">simple website without the need for a JavaScript-capable webbrowser here</a>
+</p>
+
+<div class="container">
+<h2>Controls on SK-FM4-216-ETHERNET</h2>
+<p>Please turn the knob on the starter kit. Also, press the LEFT and RIGHT pushbuttons to increase and decrease the demo value, also shown on the display.
+</p>
+<div class="label">RP1: ADC (Analog Digital Converter):<span id="av">&nbsp;</span></div><div class="barbg"><div id="adc" class="bar">&nbsp;</div></div><br>
+<div class="label">Pushbuttons LEFT and RIGHT, associated with these two buttons:
+<input type="button" value ="-" name="decbtn" onClick="javascript:decLCD()">
+<input type="text" name="lcdval" size="2" maxlength="2" id="lcdval" value="78" onfocus="this.blur()" readonly="readonly" >
+<input type="button" value ="+" name="incbtn" onClick="javascript:incLCD()">
+</div><div class="barbg"><div id="lcd" class="bar">&nbsp;</div></div><br>
+</div>
+
+
+<p>
+
+For more information, updates, code examples and documentation, please visit our website at <a href="http://www.spansion.com/">http://www.spansion.com/</a>.
+</p>
+<p>
+Below, you see a 338kb large picture of the SK-FM4-216-ETHERNET evaluation board to demonstrate transfer speed.
+<img alt="big picture" src="bigpicture.jpg?1"><!--?1 to circumvent browser cache to enable performance measurements-->
+</p>
+</body>
+</html>  
+

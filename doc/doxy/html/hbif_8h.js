@@ -1,0 +1,27 @@
+var hbif_8h =
+[
+    [ "en_hbif_ltcy_cycle_t", "group___hbif_group.html#ga524ea41e479e39abc794069ad22cc360", null ],
+    [ "en_hbif_rcsh_cycle_t", "group___hbif_group.html#gad1722ae27202b0dced5b3f434007deb8", null ],
+    [ "en_hbif_rcshi_cycle_t", "group___hbif_group.html#ga0ad1621063e8d5b73ec092c41a3a69e4", null ],
+    [ "en_hbif_rcss_cycle_t", "group___hbif_group.html#ga0f1f096cb50260ee1e71f99a52336e6d", null ],
+    [ "en_hbif_status_t", "group___hbif_group.html#ga56fb2b7ee4f7666a9aa93a04c1831736", null ],
+    [ "en_hbif_wcsh_cycle_t", "group___hbif_group.html#ga053bb2f1e36f2be96cf363e349451320", null ],
+    [ "en_hbif_wcshi_cycle_t", "group___hbif_group.html#ga5fca3a69d5e6db505fd6ba162471f8c2", null ],
+    [ "en_hbif_wcss_cycle_t", "group___hbif_group.html#gad794dc4bc5e6f52f981bcb163ed39f29", null ],
+    [ "en_hbif_wrap_size_t", "group___hbif_group.html#ga7d5d21b15e69489527fe644ce57fe66f", null ],
+    [ "stc_hbif_config_t", "group___hbif_group.html#ga9826a0f5a500f698996df096d1e22426", null ],
+    [ "stc_hbif_mem_config_t", "group___hbif_group.html#gaa11fcc3b3c0326a10f6594a98371ee80", null ],
+    [ "en_hbif_csh_cycle_t", "group___hbif_group.html#gab2170fb7b73829e69534ce1879f1cfc6", null ],
+    [ "en_hbif_cshi_cycle_t", "group___hbif_group.html#ga4feb8f7221b7edcf1e93c6a28324a278", null ],
+    [ "en_hbif_css_cycle_t", "group___hbif_group.html#ga7e93b14d8677f13cd367b24f939207b6", null ],
+    [ "en_hbif_ltcy_cycle", "group___hbif_group.html#gaa03d1655d61c1d32a4e5dc84eac88946", null ],
+    [ "en_hbif_status", "group___hbif_group.html#ga1ad4098392642c14099494e06673fc7f", null ],
+    [ "en_hbif_wrap_size", "group___hbif_group.html#gaa66705e9e2f4e72702f668056501d5ae", null ],
+    [ "Hbif_DeInit", "group___hbif_group.html#ga46bbe2f41f49e00614ae952d29074870", null ],
+    [ "Hbif_GetInterruptFlag", "group___hbif_group.html#gafa36408c737ae2fd769a908438a37dbf", null ],
+    [ "Hbif_GetStatus", "group___hbif_group.html#gad61f82f66996e1de2c2f265367b36b11", null ],
+    [ "Hbif_Init", "group___hbif_group.html#ga3efe71704201bbcc18a44b1f14cd0a72", null ],
+    [ "Hbif_SetGpo0Level", "group___hbif_group.html#ga884814308fe1203dd1aceca756d84cb3", null ],
+    [ "Hbif_SetGpo1Level", "group___hbif_group.html#ga6b660f9b343f5e308dfaf356af5e4f84", null ],
+    [ "Hbif_SetWriteProtection", "group___hbif_group.html#ga8ef61a2f95627e63781c81f3d64e070e", null ]
+];

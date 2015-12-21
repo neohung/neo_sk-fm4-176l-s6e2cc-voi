@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__dma__irq__sel.html" title="DMA interrupt selection." alt="" coords="5,5,120,32"/>
+<area shape="rect" id="node3" href="$structstc__dma__irq__cb.html" title="DMA interrupt callback function." alt="" coords="144,5,256,32"/>
+</map>

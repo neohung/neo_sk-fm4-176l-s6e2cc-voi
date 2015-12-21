@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__rtc__irq__cb.html" title="RTC callback functions structure." alt="" coords="14,5,117,32"/>
+<area shape="rect" id="node3" href="$structstc__rtc__freq__corr.html" title="frequency correction configuration" alt="" coords="5,56,125,83"/>
+<area shape="rect" id="node4" href="$structstc__rtc__time.html" title="Real Time Clock Date and Time structure." alt="" coords="19,107,111,133"/>
+<area shape="rect" id="node5" href="$structstc__rtc__alarm.html" title="Real Time Clock Alarm structure." alt="" coords="15,157,115,184"/>
+<area shape="rect" id="node6" href="$structstc__rtc__timer.html" title="Real Time Clock timer configuration structure." alt="" coords="17,208,114,235"/>
+<area shape="rect" id="node7" href="$structstc__rtc__irq__en.html" title="Interrupt configuration structure." alt="" coords="14,259,117,285"/>
+</map>

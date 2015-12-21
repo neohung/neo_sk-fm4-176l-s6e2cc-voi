@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structstc__can__notification.html" title="CAN notification pointer structure." alt="" coords="5,200,139,227"/>
+<area shape="rect" id="node3" href="$structstc__can__interrupt__handling.html" title="CAN interrupt pointer structure." alt="" coords="164,200,340,227"/>
+<area shape="rect" id="node4" href="$structstc__can__msg.html" title="CAN message." alt="" coords="204,96,300,123"/>
+<area shape="rect" id="node5" href="$structstc__can__msg__data.html" title="CAN message data." alt="" coords="116,5,244,32"/>
+<area shape="rect" id="node6" href="$structstc__can__msg__id.html" title="CAN message identifier." alt="" coords="269,5,381,32"/>
+</map>

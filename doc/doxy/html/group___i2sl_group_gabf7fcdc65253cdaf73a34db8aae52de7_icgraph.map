@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___i2sl_group.html#gafd17098c36ecaef4bee501e259700f8d" title="Deinitialisation I2S." alt="" coords="181,5,264,32"/>
+<area shape="rect" id="node3" href="$group___i2sl_group.html#ga86d070c80db846ecfc85d56edc06f47e" title="Disable I2S Clock out." alt="" coords="153,56,293,83"/>
+<area shape="rect" id="node4" href="$group___i2sl_group.html#ga6a85f03a14067506dabceb673d60e2eb" title="Enable I2S Clock out." alt="" coords="154,107,291,133"/>
+<area shape="rect" id="node5" href="$group___i2sl_group.html#gae2eb1a34df38f5a3873357e914d6224a" title="Get status of I2S&#45;Lite according to status type." alt="" coords="171,157,275,184"/>
+<area shape="rect" id="node6" href="$group___i2sl_group.html#ga8f9499864a441a72b0eec2054730382c" title="Initialize I2S." alt="" coords="189,208,256,235"/>
+<area shape="rect" id="node7" href="$group___i2sl_group.html#ga155dcf534c58953389680b3d99ce4d4d" title="start I2S, enable i2s clock generate" alt="" coords="184,259,261,285"/>
+<area shape="rect" id="node8" href="$group___i2sl_group.html#ga2935f01c35725c0117ee036320f88e21" title="stop I2S, disable i2s clock generate" alt="" coords="185,309,260,336"/>
+</map>

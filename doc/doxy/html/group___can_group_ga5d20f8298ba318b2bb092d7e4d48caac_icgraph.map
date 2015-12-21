@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$group___can_group.html#gadd7db261d564541d858756c169f5bd71" title="Configures a message buffer for transmission. Setting of new values is not possible if a transmission..." alt="" coords="232,5,411,32"/>
+<area shape="rect" id="node3" href="$group___can_group.html#gac2dfa65e0a9a2137f75d3ebbf257789b" title="Updates the message data of a message buffer and/or start transmission. Transmits the message immedia..." alt="" coords="211,56,432,83"/>
+<area shape="rect" id="node4" href="$group___can_group.html#ga7398532897b21d25c53be9f8e4d820f4" title="Updates the message data of a message buffer and/or start with EOB = 0 (Msg Buffer as FIFO) transmiss..." alt="" coords="480,56,723,83"/>
+</map>
