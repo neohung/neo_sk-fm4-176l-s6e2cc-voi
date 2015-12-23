@@ -118,26 +118,29 @@ boolean_t I2c_Init(void)
    bFM4_GPIO_PFRB_P5 = 1u;                                  // Pin 113 (SOT8_1)
    bFM4_GPIO_PFRB_P6 = 1u;                                  // Pin 114 (SCK8_1)
 
-   FM4_GPIO->EPFR16 &= ~(0x3ul << 4ul);                    // SIN14S
-   FM4_GPIO->EPFR16 &= ~(0x3ul << 6ul);                    // SOT14B
-   FM4_GPIO->EPFR16 &= ~(0x3ul << 8ul);                    // SCK14B
+   FM4_GPIO->EPFR16 &= ~(0x3ul << 4ul);                    // SIN8S
+   FM4_GPIO->EPFR16 &= ~(0x3ul << 6ul);                    // SOT8B
+   FM4_GPIO->EPFR16 &= ~(0x3ul << 8ul);                    // SCK8B
 
-   FM4_GPIO->EPFR16 |= (0x2ul << 6ul);                     // SOT14B
-   FM4_GPIO->EPFR16 |= (0x2ul << 8ul);                     // SCK14B
+   FM4_GPIO->EPFR16 |= (0x2ul << 6ul);                     // SOT8B
+   FM4_GPIO->EPFR16 |= (0x2ul << 8ul);                     // SCK8B
   
 
    //BAUDRATE = 400,000 ; 400KHz
+   //__HCLK = 200,000,000 = 200MHz
+
+   neo_printf("__HCLK=%d\r\n",__HCLK);
    i2cmfs->BGR  = (__HCLK / 2ul) / 400000ul - 1ul;       // BGR = PCLK / BAUDRATE - 1
-    
+    neo_printf("i2cmfs->BGR =%d\r\n",i2cmfs->BGR );
    i2cmfs->SCR |= 0x80u;                                 // Reset (UPCL = 1)
    i2cmfs->SMR  = 0x80u;                                 // operation mode 4, no interrupts, no test
                                                             // mode, no wake up
 
-   i2cmfs->ISBA = 0x00u;
+   i2cmfs->ISBA = 0x0eu;
 
    i2cmfs->NFCR |= 0x0008u;                              // Enable noise filter for I2C ch. 1 for 60-80MHz PCLK operation
-
-   i2cmfs->ISMK = 0x80u;                                 // Enable I2C interface
+   //0x80
+   i2cmfs->ISMK = 0xFFu;                                 // Enable I2C interface
    
    return TRUE;
 }
@@ -157,6 +160,7 @@ int32_t I2cSendByte(uint8_t u8Data)
   i2cmfs->IBCR = 0xB0u;                                  // WSEL = 1, ACKE = 1, Clear INT flag
 
   u32Timeout = I2C_TIME_OUT;
+  //ª½¨ìIBCR !=1
   while(!(i2cmfs->IBCR & 0x01u))                         // Wait for transmission complete
   {                                                         // via INT flag
       u32Timeout--;
@@ -200,13 +204,370 @@ int32_t I2cSendByte(uint8_t u8Data)
   return 0u;
 }
 
+static int neo_I2cStart(uint8_t u8DevAddr)
+{
+    /* Prepare I2C device address */
+    Mfs_I2c_SendData(&I2C8, u8DevAddr);
+    
+    /* Enable ACK */
+    Mfs_I2c_ConfigAck(&I2C8, I2cAck);
+    
+    /* Generate I2C start signal */
+    if(Ok != Mfs_I2c_GenerateStart(&I2C8))
+    {
+        return ErrorTimeout; /* Timeout or other error */
+    }
+
+    /* Wait until data transfer finish */
+    while(1)
+    {
+        if(TRUE != Mfs_I2c_GetStatus(&I2C8, I2cRxTxIrq))
+        {
+            break;
+        }
+    }
+    
+    /* Check ACK */
+    if(I2cNAck == Mfs_I2c_GetAck(&I2C8))
+    {
+        return Error;   /* NACK */
+    }
+    
+    
+    return Ok;
+}
+
+static int neo_I2cStop(void)
+{
+    /* Generate I2C start signal */
+     neo_printf("step=%d\r\n",1);
+    if(Ok != Mfs_I2c_GenerateStop(&I2C8))
+    {
+      neo_printf("return ErrorTimeout\r\n");
+        return ErrorTimeout; /* Timeout or other error */
+    }
+     neo_printf("step=%d\r\n",2);
+    /* Clear Stop condition flag */
+    while(1)
+    {
+        int ret = Mfs_I2c_GetStatus(&I2C8, I2cStopDetect);
+         neo_printf("ret=%d\r\n",ret);
+        if(TRUE == ret)
+        {
+             neo_printf("ret=%d\r\n",ret);
+            break;
+        }
+    }
+     neo_printf("step=%d\r\n",3);
+    if(TRUE == Mfs_I2c_GetStatus(&I2C8, I2cBusErr))
+    {
+        return Error;
+    }
+   
+    Mfs_I2c_ClrStatus(&I2C8, I2cStopDetect);
+    Mfs_I2c_ClrStatus(&I2C8, I2cRxTxIrq);
+    
+    return Ok;
+}
+
+
+static int neo_I2cSendData(uint8_t* pu8Data, uint8_t u8Size) 
+{
+    uint8_t i = 0;
+    
+    for(i=0;i<u8Size;i++)
+    {
+        /* Wait for end of transmission */
+       neo_printf("neo_I2cSendData start\r\n");
+        while(1)
+        {
+            if(TRUE == Mfs_I2c_GetStatus(&I2C8, I2cRxTxIrq))
+            {
+                break;
+            }
+        }
+        neo_printf("Mfs_I2c_GetStatus pass\r\n");
+   
+        /* Transmit the data */
+        Mfs_I2c_SendData(&I2C8, pu8Data[i]);
+        Mfs_I2c_ClrStatus(&I2C8, I2cRxTxIrq);
+        
+        neo_printf("Check until TX finish\r\n");
+        /* Check until TX finish */
+        while(1)
+        {
+            if(TRUE == Mfs_I2c_GetStatus(&I2C8, I2cTxEmpty))
+            {
+                break;
+            }
+        }
+         neo_printf("TX finish pass\r\n");
+   
+        /* Check ACK */
+        if(I2cNAck == Mfs_I2c_GetAck(&I2C8))
+        {
+            return Error;   /* NACK */
+        }
+         neo_printf("TX Mfs_I2c_GetAck pass\r\n");
+    }
+    
+    return Ok;
+}
+
+static int neo_I2cRead(uint8_t *pRxData, uint8_t u8Size)
+{
+    uint8_t u8i = 0;
+    uint8_t u8j;
+       
+    while(u8i < u8Size)
+    {   
+        /* Wait for the receive data */
+        while(1)
+        {
+            if(TRUE == Mfs_I2c_GetStatus(&I2C8, I2cRxTxIrq))
+            {
+                break;
+            }
+        }
+        
+        u8j = SystemCoreClock/4000000;
+        while(u8j--);
+        
+        
+        if(u8i == u8Size-1)
+        {
+            Mfs_I2c_ConfigAck(&I2C8, I2cNAck); /* Last byte send a NACK */
+        }
+        else
+        {
+            Mfs_I2c_ConfigAck(&I2C8, I2cAck);
+        }
+        
+        /* Clear interrupt flag and receive data to RX buffer */
+        Mfs_I2c_ClrStatus(&I2C8, I2cRxTxIrq);
+        
+        /* Wait for the receive data */
+        while(1)
+        {
+            if(TRUE == Mfs_I2c_GetStatus(&I2C8, I2cRxFull))
+            {
+                break;
+            }
+        }
+         
+        /* Check error status of I2C */
+        //if(TRUE == I2cCheckErrorStatus())
+        //{
+        //    return Error;
+        //}
+        
+        pRxData[u8i++] = Mfs_I2c_ReceiveData(&I2C8);
+    }
+    return Ok;
+}
+
+
+
+/*
+int read_i2c_test(uint8_t u8DevAddr, uint8_t* pu8CurData)
+{   
+    if(Ok != neo_I2cStart((u8DevAddr<<1)  | 1u))
+    {
+      neo_printf("neo_I2cStart test\r\n");
+        return Error;
+    }
+    
+    neo_I2cRead(pu8CurData, 1);
+    
+    if(Ok != neo_I2cStop())
+    {
+       neo_printf("neo_I2cStop test\r\n");
+     
+        return Error;
+    }
+    
+    return Ok;
+}
+*/
+
+static int neo_I2cRestart(uint8_t u8Addr)
+{
+    /* Prepare I2C device address */
+    Mfs_I2c_SendData(&I2C8, u8Addr);
+    
+    /* Enable ACK */
+    Mfs_I2c_ConfigAck(&I2C8, I2cAck);
+    
+    /* Generate I2C start signal */
+    if(Ok != Mfs_I2c_GenerateRestart(&I2C8))
+    {
+        return ErrorTimeout; /* Timeout or other error */
+    }
+
+    /* Wait until data transfer finish */
+    while(1)
+    {
+        if(TRUE != Mfs_I2c_GetStatus(&I2C8, I2cRxTxIrq))
+        {
+            break;
+        }
+    }
+    
+    /* Check ACK */
+    if(I2cNAck == Mfs_I2c_GetAck(&I2C8))
+    {
+        return Error;   /* NACK */
+    }
+    
+    /* Check error status of I2C */
+    //if(TRUE == I2cCheckErrorStatus())
+    //{
+    //    return Error;
+    //}
+    
+    return Ok;
+}
+
+
+int read_i2c_test(uint8_t u8DevAddr, uint16_t u16Addr, uint8_t* pu8Data)
+{
+    uint8_t au8TempData[2];
+    uint32_t u32DelayCnt = SystemCoreClock/10000;
+    
+    /* Send start with write flag */
+    if(Ok != neo_I2cStart((u8DevAddr<<1)  | 0u))
+    {
+      neo_printf("neo_I2cStart error\r\n");
+        return Error;
+    }
+    
+   
+    /* Send address */
+    au8TempData[0] = u16Addr & 0x00FFu;
+    //    au8TempData[0] = (u16Addr & 0xFF00u) >> 8;
+    //    au8TempData[1] = u16Addr & 0x00FFu;
+    
+    if(Ok != neo_I2cSendData(au8TempData, 1))
+    {
+      neo_printf("neo_I2cSendData error\r\n");
+        return Error;
+    }
+    
+     neo_printf("Try neo_I2cSendData error\r\n");
+    /* Dummy delay */
+    while(u32DelayCnt--);
+    
+    
+    neo_printf("neo_I2cRestart error\r\n");
+    /* Send start with read flag */
+    if(Ok != neo_I2cRestart((u8DevAddr<<1)  | 1u))
+    {
+      neo_printf("neo_I2cRestart error\r\n");
+        return Error;
+    }
+       
+    /* Read address */   
+    if(Ok != neo_I2cRead(pu8Data, 1))
+    {
+       neo_printf("neo_I2cRead error\r\n");
+        return Error;
+    }
+       
+    if(Ok != neo_I2cStop())
+    {
+      neo_printf("I2cStop error\r\n");
+        return Error;
+    }
+    
+    return Ok;
+}
+
 static void i2cTask( void *pvParameters )
 {
    neo_printf("i2cTask task started test\r\n");
-   I2c_Init();
-   int ret = 0;
-   ret = I2cSendByte(0x0e);
-   neo_printf("ret=%d\r\n",ret);
+   //I2c_Init();
+   //int ret = 0;
+   //ret = I2cSendByte(0x0e);
+    //>>>>>>>>>>>>>>>>>> I2C INIT >>>>>>>>>>>>>>>>>
+    stc_mfs_i2c_config_t stcI2cConfig;
+   
+    PDL_ZERO_STRUCT(stcI2cConfig);
+    
+    InitI2cIo();
+    
+    stcI2cConfig.enMsMode = I2cMaster;
+    stcI2cConfig.u32BaudRate = 100000u;
+    stcI2cConfig.bWaitSelection = FALSE;
+    stcI2cConfig.bDmaEnable = FALSE;
+    stcI2cConfig.pstcFifoConfig = NULL;
+    
+    if(Ok != Mfs_I2c_Init(&I2C8, &stcI2cConfig))
+    {
+        neo_printf("error\r\n");
+    }
+    //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+    neo_printf("neo_I2cStart\r\n");
+    uint8_t v;
+    read_i2c_test(0xe,0x0,&v);
+    
+    /*
+    int ret=0;
+    ret = neo_I2cStart((0x0e << 1)|0u);
+    neo_printf("ret=%d\r\n",ret);
+    
+     uint8_t au8TempData[2];  
+     uint8_t reg_addr = 0x0;
+      uint8_t u8Data  = 0x0;
+       au8TempData[0] = reg_addr & 0x00FFu;
+      // au8TempData[1] = u8Data;
+       neo_printf("neo_I2cSend1\r\n");
+   
+      neo_I2cSendData(au8TempData, 1);   
+       neo_printf("neo_I2cSend2\r\n");
+   
+    neo_I2cSendData(&u8Data, 1);
+    
+    neo_printf("neo_I2cStop\r\n");
+    ret = neo_I2cStop();
+    neo_printf("ret=%d\r\n",ret);
+    //Mfs_I2c_SendData(&I2C8, (0x0e << 1)|0u);
+      */
+    /* Enable ACK */
+    //I2cAck=0
+    //Mfs_I2c_ConfigAck(&I2C8, I2cAck);
+    
+    /* Generate I2C start signal */
+    //if(Ok != Mfs_I2c_GenerateStart(&I2C8))
+    //{
+    //   neo_printf("Mfs_I2c_GenerateStart error\r\n"); /* Timeout or other error */
+   // }
+
+    /* Wait until data transfer finish */
+    //I2cRxTxIrq = 10
+   // while(1)
+    //{
+     //   if(TRUE != Mfs_I2c_GetStatus(&I2C8, I2cRxTxIrq))
+      //  {
+      //      break;
+      //  }
+    //}
+    
+    /* Check ACK */
+   // if(I2cNAck == Mfs_I2c_GetAck(&I2C8))
+   // {
+    //    neo_printf("NACK error\r\n");   /* NACK */
+   // }
+    
+    //
+    
+    
+      //au8TempData[0] = (u16Addr & 0xFF00u) >> 8;
+      //au8TempData[1] = u16Addr & 0x00FFu;
+      //au8TempData[2] = u8Data;
+     
+  
+    
+   //neo_printf("ret=%d\r\n",ret);
    while(1){
       vTaskDelay(1000/portTICK_RATE_MS);
    };
@@ -226,7 +587,7 @@ static void mainTask( void *pvParameters )
                 tskIDLE_PRIORITY + 1,                   // The priority assigned to the task.
                 NULL );      
          
-     */
+     
        xTaskCreate(rgbledTask,                       // The function that implements the task.
                 "rgbled_task",                             // The text name assigned to the task - for debug only as it is not used by the kernel.
                 128,               // The size of the stack to allocate to the task.
@@ -234,7 +595,7 @@ static void mainTask( void *pvParameters )
                 tskIDLE_PRIORITY + 1,                   // The priority assigned to the task.
                 NULL );      
 
-  
+       */
          xTaskCreate(i2cTask,                       // The function that implements the task.
                 "i2c_task",                             // The text name assigned to the task - for debug only as it is not used by the kernel.
                 128,               // The size of the stack to allocate to the task.
