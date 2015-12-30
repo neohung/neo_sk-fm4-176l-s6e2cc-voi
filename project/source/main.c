@@ -10,6 +10,7 @@
 #include "neo_rtc.h"
 #include "neo_pwm_rgbled.h"
 
+#include "neo_i2s.h"
 static void mainTask( void *pvParameters );
 static void RtcTask( void *pvParameters );
 static void rgbledTask(void *pvParameters);
@@ -19,8 +20,27 @@ static char end[] = "Finish\n\r";
 
 extern int neo_printf(const char* format, ...);
 
+     
+#include "multicon_uart.h"
+#include "multicon_i2c.h"
+
+#define BOARD_UART_CH          0
+#define BOARD_UART_SPEED       115200
+
+
 int main(void) 
 { 
+  Uart_Init(BOARD_UART_CH,UART_BAUDRATE(BOARD_UART_SPEED));
+  //int recv_len = 0;
+  //char* buf = receive_line_echo(&recv_len);
+  
+  //printf("\n\r printf Now check:\n\r");
+  // printf("check again:\n\r");
+  //puts(buf);
+  I2C_Init(8);
+  printf("I2cStart: ret=%d\n\r",Multicon_I2cStart(8,(0xe<<1)));
+  //I2CCODEC_I2CSTART(I2S_CODEC_ADDRESS << 1);
+  while(1);
   //uart_init();
   Uart_Io_Init();
   neo_printf("%s",szUartTxBuf);
@@ -40,11 +60,11 @@ int main(void)
 
 } 
 
-#define I2C_RW_WRITE          (0u)
+//#define I2C_RW_WRITE          (0u)
 
-#define I2C_TIME_OUT          (5000u)    // error counter time-out
+//#define I2C_TIME_OUT          (5000u)    // error counter time-out
 
-#define I2C_STOP_TIMEOUT      (0xFFFFu)  // time-out for stop condition
+//#define I2C_STOP_TIMEOUT      (0xFFFFu)  // time-out for stop condition
 
 /*****************************************************************************
  ** \brief    The following function checks if a slave device holds the SDA
@@ -281,7 +301,9 @@ static int neo_I2cSendData(uint8_t* pu8Data, uint8_t u8Size)
        neo_printf("neo_I2cSendData start\r\n");
         while(1)
         {
-            if(TRUE == Mfs_I2c_GetStatus(&I2C8, I2cRxTxIrq))
+             int ret =  Mfs_I2c_GetStatus(&I2C8, I2cRxTxIrq);
+             //neo_printf("Mfs_I2c_GetStatus =%d\r\n",ret);
+            if(TRUE == ret)
             {
                 break;
             }
@@ -435,25 +457,27 @@ int read_i2c_test(uint8_t u8DevAddr, uint16_t u16Addr, uint8_t* pu8Data)
     uint32_t u32DelayCnt = SystemCoreClock/10000;
     
     /* Send start with write flag */
-    if(Ok != neo_I2cStart((u8DevAddr<<1)  | 0u))
+    int ret = neo_I2cStart((u8DevAddr<<1)  | 0u);
+    if(Ok != ret)
     {
       neo_printf("neo_I2cStart error\r\n");
         return Error;
     }
     
-   
+    uint8_t addr = 0x06;
     /* Send address */
-    au8TempData[0] = u16Addr & 0x00FFu;
+    au8TempData[0] = addr & 0x00FFu;
     //    au8TempData[0] = (u16Addr & 0xFF00u) >> 8;
     //    au8TempData[1] = u16Addr & 0x00FFu;
-    
+   
+      neo_printf("Try neo_I2cSendData bef\r\n");
     if(Ok != neo_I2cSendData(au8TempData, 1))
     {
       neo_printf("neo_I2cSendData error\r\n");
         return Error;
     }
     
-     neo_printf("Try neo_I2cSendData error\r\n");
+      neo_printf("Try neo_I2cSendData after\r\n");
     /* Dummy delay */
     while(u32DelayCnt--);
     
@@ -494,7 +518,7 @@ static void i2cTask( void *pvParameters )
     PDL_ZERO_STRUCT(stcI2cConfig);
     
     InitI2cIo();
-    
+    //I2c_Init();
     stcI2cConfig.enMsMode = I2cMaster;
     stcI2cConfig.u32BaudRate = 100000u;
     stcI2cConfig.bWaitSelection = FALSE;
@@ -508,7 +532,7 @@ static void i2cTask( void *pvParameters )
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
     neo_printf("neo_I2cStart\r\n");
     uint8_t v;
-    read_i2c_test(0xe,0x0,&v);
+    read_i2c_test(0xe,0x06,&v);
     
     /*
     int ret=0;
@@ -574,6 +598,13 @@ static void i2cTask( void *pvParameters )
    vTaskDelete(NULL); 
 }
 
+
+static void i2sTask( void *pvParameters )
+{
+   neo_printf("i2sTask task started test\r\n");
+   i2s_init();
+
+}
 static void mainTask( void *pvParameters )
 {
   
@@ -596,8 +627,8 @@ static void mainTask( void *pvParameters )
                 NULL );      
 
        */
-         xTaskCreate(i2cTask,                       // The function that implements the task.
-                "i2c_task",                             // The text name assigned to the task - for debug only as it is not used by the kernel.
+         xTaskCreate(i2sTask,                       // The function that implements the task.
+                "i2s_task",                             // The text name assigned to the task - for debug only as it is not used by the kernel.
                 128,               // The size of the stack to allocate to the task.
                 NULL,                                   // The parameter passed to the task
                 tskIDLE_PRIORITY + 1,                   // The priority assigned to the task.

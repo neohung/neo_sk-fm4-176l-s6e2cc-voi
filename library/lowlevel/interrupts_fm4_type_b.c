@@ -58,7 +58,7 @@
 /******************************************************************************/
 
 #include "interrupts_fm4.h"
-
+#include "mfs.h"
 /******************************************************************************/
 /******************************* Dummy Handler ********************************/
 /******************************************************************************/
@@ -4649,7 +4649,7 @@ void MFS8_RX_IRQHandler(void)
     if (0ul != (u32IrqMon & 0x00000001ul))
     {
         switch(m_astcMfsInstanceDataLut[MfsInstanceIndexMfs8].stcInternData.enMode)
-        {
+        {  
             case MfsUartMode:
                 MfsUartIrqHandlerRx((stc_mfsn_uart_t*)&UART8, &(m_astcMfsInstanceDataLut[MfsInstanceIndexMfs8].stcInternData));
     

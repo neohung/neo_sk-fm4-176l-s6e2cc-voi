@@ -580,7 +580,7 @@
 #define PDL_INTERRUPT_ENABLE_MFS5              PDL_OFF
 #define PDL_INTERRUPT_ENABLE_MFS6              PDL_OFF
 #define PDL_INTERRUPT_ENABLE_MFS7              PDL_OFF
-#define PDL_INTERRUPT_ENABLE_MFS8              PDL_OFF
+#define PDL_INTERRUPT_ENABLE_MFS8              PDL_ON
 #define PDL_INTERRUPT_ENABLE_MFS9              PDL_OFF
 #define PDL_INTERRUPT_ENABLE_MFS10             PDL_OFF
 #define PDL_INTERRUPT_ENABLE_MFS11             PDL_OFF

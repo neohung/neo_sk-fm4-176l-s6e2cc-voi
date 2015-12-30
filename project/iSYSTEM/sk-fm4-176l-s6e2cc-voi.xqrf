@@ -1047,6 +1047,24 @@
        <File.3>
         <FileName>$(IRFDIR)..\..\driver\neo_pwm_rgbled.h</FileName>
        </File.3>
+       <File.4>
+        <FileName>$(IRFDIR)..\..\driver\neo_i2s.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -mfpu=fpv4-sp-d16 -mfloat-abi=softfp</CompilerOptions>
+        </FileOptios>
+       </File.4>
+       <File.5>
+        <FileName>$(IRFDIR)..\..\driver\multicon_uart.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -mfpu=fpv4-sp-d16 -mfloat-abi=softfp</CompilerOptions>
+        </FileOptios>
+       </File.5>
+       <File.6>
+        <FileName>$(IRFDIR)..\..\driver\multicon_i2c.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME) -mfpu=fpv4-sp-d16 -mfloat-abi=softfp</CompilerOptions>
+        </FileOptios>
+       </File.6>
       </LinkGroup.6>
       <TargetOptios>
        <AsmArgFile></AsmArgFile>
@@ -1773,6 +1791,24 @@
        <File.3>
         <FileName>$(IRFDIR)..\..\driver\neo_pwm_rgbled.h</FileName>
        </File.3>
+       <File.4>
+        <FileName>$(IRFDIR)..\..\driver\neo_i2s.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME)</CompilerOptions>
+        </FileOptios>
+       </File.4>
+       <File.5>
+        <FileName>$(IRFDIR)..\..\driver\multicon_uart.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME)</CompilerOptions>
+        </FileOptios>
+       </File.5>
+       <File.6>
+        <FileName>$(IRFDIR)..\..\driver\multicon_i2c.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME)</CompilerOptions>
+        </FileOptios>
+       </File.6>
       </LinkGroup.6>
       <TargetOptios>
        <AsmArgFile></AsmArgFile>
@@ -2499,6 +2535,24 @@
        <File.3>
         <FileName>$(IRFDIR)..\..\driver\neo_pwm_rgbled.h</FileName>
        </File.3>
+       <File.4>
+        <FileName>$(IRFDIR)..\..\driver\neo_i2s.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME)</CompilerOptions>
+        </FileOptios>
+       </File.4>
+       <File.5>
+        <FileName>$(IRFDIR)..\..\driver\multicon_uart.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME)</CompilerOptions>
+        </FileOptios>
+       </File.5>
+       <File.6>
+        <FileName>$(IRFDIR)..\..\driver\multicon_i2c.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME)</CompilerOptions>
+        </FileOptios>
+       </File.6>
       </LinkGroup.6>
       <TargetOptios>
        <AsmArgFile></AsmArgFile>
@@ -3225,6 +3279,24 @@
        <File.3>
         <FileName>$(IRFDIR)..\..\driver\neo_pwm_rgbled.h</FileName>
        </File.3>
+       <File.4>
+        <FileName>$(IRFDIR)..\..\driver\neo_i2s.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME)</CompilerOptions>
+        </FileOptios>
+       </File.4>
+       <File.5>
+        <FileName>$(IRFDIR)..\..\driver\multicon_uart.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME)</CompilerOptions>
+        </FileOptios>
+       </File.5>
+       <File.6>
+        <FileName>$(IRFDIR)..\..\driver\multicon_i2c.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME)</CompilerOptions>
+        </FileOptios>
+       </File.6>
       </LinkGroup.6>
       <TargetOptios>
        <AsmArgFile></AsmArgFile>
@@ -3951,6 +4023,24 @@
        <File.3>
         <FileName>$(IRFDIR)..\..\driver\neo_pwm_rgbled.h</FileName>
        </File.3>
+       <File.4>
+        <FileName>$(IRFDIR)..\..\driver\neo_i2s.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME)</CompilerOptions>
+        </FileOptios>
+       </File.4>
+       <File.5>
+        <FileName>$(IRFDIR)..\..\driver\multicon_uart.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME)</CompilerOptions>
+        </FileOptios>
+       </File.5>
+       <File.6>
+        <FileName>$(IRFDIR)..\..\driver\multicon_i2c.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME)</CompilerOptions>
+        </FileOptios>
+       </File.6>
       </LinkGroup.6>
       <TargetOptios>
        <AsmArgFile></AsmArgFile>
@@ -4677,6 +4767,24 @@
        <File.3>
         <FileName>$(IRFDIR)..\..\driver\neo_pwm_rgbled.h</FileName>
        </File.3>
+       <File.4>
+        <FileName>$(IRFDIR)..\..\driver\neo_i2s.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME)</CompilerOptions>
+        </FileOptios>
+       </File.4>
+       <File.5>
+        <FileName>$(IRFDIR)..\..\driver\multicon_uart.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME)</CompilerOptions>
+        </FileOptios>
+       </File.5>
+       <File.6>
+        <FileName>$(IRFDIR)..\..\driver\multicon_i2c.c</FileName>
+        <FileOptios>
+         <CompilerOptions>-x c   -mcpu=cortex-m4  -mthumb $(DEFINES) $(INCLUDES)  -g3 -c -I $(IRFDIR) -o $(NOEXT).o $(EDNAME)</CompilerOptions>
+        </FileOptios>
+       </File.6>
       </LinkGroup.6>
       <TargetOptios>
        <AsmArgFile></AsmArgFile>
